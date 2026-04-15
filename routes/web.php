@@ -24,7 +24,7 @@ Route::get('/menu', function () {
 })->middleware('auth')->name('menu');
 
 // Dashboard (posts)
-Route::get('/', [PostController::class, 'index'])
+Route::get('/dashboard', [PostController::class, 'index'])
     ->middleware('auth')
     ->name('dashboard');
 
