@@ -47,12 +47,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::post('/register', [RegisterController::class, 'store'])->name('register');
-
-Route::get('/menu', function () {
-    return view('Menu');
-})->middleware('auth')->name('menu');
-
-
 // Rotas padrão de autenticação (login/logout)
 require __DIR__.'/auth.php';
