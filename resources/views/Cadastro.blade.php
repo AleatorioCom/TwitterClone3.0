@@ -12,7 +12,7 @@
             <h2>Cadastro</h2>
             <p>Crie sua conta</p>
 
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('/') }}">
                 @csrf
 
                 <div class="input-group">
