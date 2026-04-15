@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===== LOGIN ===== */
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.login-box {
+    background: #f5f7fa;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão padrão */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+/* ===== MENU ===== */
+
+.menu-container {
+    width: 100%;
+    height: 100vh;
+    background: #eef1f7;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1e3c72;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+/* 🔥 CORREÇÃO AQUI */
+.logout {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Botão login */
+.btn-login {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #3490dc;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Form logout */
+.form-logout {
+    margin: 0;
+}
+
+/* Botão logout */
+.btn-logout {
+    padding: 8px 12px;
+    background-color: #e3342f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-like {
+    background: transparent;
+    border: none;
+    color: #ff4d6d;            /* cor do coração */
+    font-size: 14px;          /* menor que o padrão */
+    width: auto;
+    height: 28px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .12s ease, opacity .12s ease;
+    opacity: 0.9;
+}
+
+.btn-like:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
