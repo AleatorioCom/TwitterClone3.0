@@ -39,5 +39,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-/* 🔑 ROTAS DO LARAVEL (login real) */
 require __DIR__.'/auth.php';
