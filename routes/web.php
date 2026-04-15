@@ -5,10 +5,6 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/meulogin', function () {
     return view('Login');
 })->name('meulogin');
@@ -17,7 +13,7 @@ Route::get('/meucadastro', function () {
     return view('Cadastro');
 })->name('meucadastro');
 
-Route::get('/dashboard', [PostController::class, 'index'])
+Route::get('/', [PostController::class, 'index'])
     ->middleware('auth')
     ->name('dashboard');
 
